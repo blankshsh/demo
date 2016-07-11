@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 移动端适配 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>完整计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style type="text/css">
+    behavior: url(ie-css3.htc);
+    </style>
+</head>
+
+<body>
+    <div class="wrp">
+        <!-- 外包裹 -->
+        <form name="calculator" action="" method="get">
+            <div>
+                <!-- 显示栏 -->
+                <input type="text" name="numScreen" class="screen" value="0" onfocus="this.blur();" />
+            </div>
+            <div class="btn">
+                <!--按钮-->
+                <input type="button" onclick="command(7)" value="7">
+                <input type="button" onclick="command(8)" value="8">
+                <input type="button" onclick="command(9)" value="9">
+                <input type="button" class="imp-symbol" onclick="del()" value="←">
+                <input type="button" class="imp-symbol" onclick="clearscreen()" value="C">
+                <input type="button" onclick="command(4)" value="4">
+                <input type="button" onclick="command(5)" value="5">
+                <input type="button" onclick="command(6)" value="6">
+                <input type="button" class="symbol" onclick="mul()" value="*">
+                <input type="button" class="symbol" onclick="division()" value="÷">
+                <input type="button" onclick="command(1)" value="1">
+                <input type="button" onclick="command(2)" value="2">
+                <input type="button" onclick="command(3)" value="3">
+                <input type="button" class="symbol" onclick="plus()" value="+">
+                <input type="button" class="symbol" onclick="minus()" value="-">
+                <input type="button" onclick="command(0)" value="0">
+                <input type="button" onclick="dzero()" value="00">
+                <input type="button" onclick="dot()" value=".">
+                <input type="button" class="symbol" onclick="remainder()" value="%">
+                <input type="button" class="symbol" onclick="equals()" value="=">
+                <input type="button" class="symbol" id="formulas" onclick="_sin()" value="sin">
+                <input type="button" class="symbol" id="formulas" onclick="_cos()" value="cos">
+                <input type="button" class="symbol" id="formulas" onclick="_tan()" value="tan">
+            </div>
+            <!-- 主体 -->
+        </form>
+        <div class="foot"></div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

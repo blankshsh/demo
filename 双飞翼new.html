@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    body {
+        min-width: 700px;
+    }
+    
+    div,
+    p,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    p {
+        height: 100px;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .wrp {
+        margin: 10px 20px;
+    }
+    
+    .header {
+        background: #FF5655;
+    }
+    
+    .footer {
+        background: #5655FF;
+    }
+    
+    .content {
+        margin: 10px 0;
+    }
+    
+    .left {
+        float: left;
+        width: 230px;
+        margin-left: -100%;
+        background: #F0F0F0;
+    }
+    
+    .right {
+        float: left;
+        width: 190px;
+        margin-left: -190px;
+        background: #000;
+        color: #FFF;
+    }
+    
+    .middle {
+        float: left;
+        width: 100%;
+        /*background-color: #F53153;*/
+    }
+    
+    .middleinner {
+        margin: 0 200px 0 240px;
+        background-color: #F53153;
+        /*padding-top: 15px;
+        padding-bottom: 15px;*/
+    }
+    
+    .boxcontrol:after {
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        content: ".";
+        /*解决因为folat的关系 造成撑不开盒子的问题*/
+    }
+    
+    @media screen and (max-width: 700px) {
+        .right {
+            display: none;
+        }
+        .middleinner {
+            margin: 0 0 0 240px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrp">
+        <div class="header">
+            <p>header</p>
+        </div>
+        <div class="content boxcontrol">
+            <div class="middle">
+                <div class="middleinner">
+                    <p>中间自适应</p>
+                </div>
+            </div>
+            <div class="left">
+                <p>左侧定宽</p>
+            </div>
+            <div class="right">
+                <p>右侧定宽</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>footer</p>
+        </div>
+    </div>
+</body>
+
+</html>

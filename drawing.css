@@ -1,0 +1,482 @@
+﻿    body,
+    div {
+        margin: 0;
+        padding: 0;
+    }
+    /* 身体#029be1，围巾#f42a36，铃铛#fffa64*/
+    
+    .wrp {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -344px 0 0 -300px;
+    }
+    
+    .cf:after {
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        content: ".";
+        /*解决因为folat的关系 造成撑不开盒子的问题*/
+    }
+    /*整身*/
+    
+    .header-wrp {
+        width: 450px;
+        height: 380px;
+        border: 3px solid;
+        background-color: #029be1;
+        border-radius: 50%;
+        position: relative;
+        /*margin: 0 0 0 -225px;*/
+    }
+    /*头部*/
+    
+    .headerinner {
+        width: 375px;
+        height: 330px;
+        border: 3px solid;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        position: absolute;
+        // margin: 45px 0 0 34px;
+       
+        top: 45px;
+        left: 34px;
+        /*transform: translate(30px, 50px);*/
+    }
+    
+    .eye {
+        /*眼睛*/
+        width: 90px;
+        height: 100px;
+        border: 3px solid;
+        /*边框3px实心*/
+        border-radius: 50%;
+        /*圆角度数*/
+        background-color: #FFFFFF;
+        left: 50%;
+        top: -5%;
+        margin-left: -96px;
+        position: absolute;
+        /*transform: translate(100px, -45px);*/
+    }
+    
+    .eye2 {
+        top: -5%;
+        width: 90px;
+        height: 100px;
+        border: 3px solid;
+        border-radius: 50%;
+        /*圆角度数*/
+        background-color: #FFFFFF;
+        left: 50%;
+        margin-left: 6px;
+        position: absolute;
+        /* transform: translate(200px, -150px);*/
+    }
+    
+    .eye-inner {
+        /*眼球*/
+        height: 150px;
+        width: 50px;
+        background-color: transparent;
+        /*透明色*/
+        border: 3px solid;
+        position: absolute;
+        border-radius: 50%;
+        left: 35%;
+        top: 30%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    .eye2-inner {
+        height: 150px;
+        width: 50px;
+        background-color: transparent;
+        border: 3px solid;
+        position: absolute;
+        border-radius: 50%;
+        left: 5%;
+        top: 30%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    .nose {
+        /*鼻子*/
+        width: 66px;
+        height: 55px;
+        border: 3px solid;
+        border-radius: 50%;
+        background-color: #FC2632;
+        left: 50%;
+        top: 15%;
+        margin-left: -33px;
+        position: absolute;
+        /*  transform: translate(160px, -180px);*/
+    }
+    
+    .mouth {
+        height: 300px;
+        width: 300px;
+        border: 3px solid;
+        border-radius: 50%;
+        background-color: transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #000000;
+        border-left-color: transparent;
+        bottom: 21%;
+        position: absolute;
+        left: 50%;
+        margin-left: -152px;
+    }
+    
+    .line {
+        /*胡须*/
+        width: 3px;
+        height: 150px;
+        background-color: #000000;
+        position: absolute;
+        left: 50%;
+        top: 33%;
+    }
+    
+    .line1,
+    .line2,
+    .line3,
+    .line4,
+    .line5,
+    .line6 {
+        width: 3px;
+        height: 100px;
+        background-color: #000000;
+        position: absolute;
+    }
+    
+    .line1 {
+        transform: rotate(60deg);
+        left: 70%;
+        top: 20%;
+    }
+    
+    .line2 {
+        transform: rotate(78deg);
+        left: 72%;
+        top: 30%;
+    }
+    
+    .line3 {
+        transform: rotate(94deg);
+        left: 72%;
+        top: 40%;
+    }
+    
+    .line4 {
+        transform: rotate(-60deg);
+        left: 31%;
+        top: 20%;
+    }
+    
+    .line5 {
+        transform: rotate(-78deg);
+        left: 28%;
+        top: 30%;
+    }
+    
+    .line6 {
+        transform: rotate(-94deg);
+        left: 28%;
+        top: 40%;
+    }
+    
+    .scarf {
+        /*围巾*/
+        height: 30px;
+        width: 300px;
+        background-color: #f42a36;
+        border: 3px solid;
+        position: absolute;
+        border-radius: 40px 40px 40px 40px;
+        top: -7%;
+        left: 50%;
+        margin-left: -152px;
+    }
+    
+    .bell {
+        /*铃铛*/
+        height: 70px;
+        width: 70px;
+        background-color: #fffa64;
+        border: 3px solid;
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+        top: -3%;
+        left: 50%;
+        margin-left: -37px;
+    }
+    
+    .bellinner {
+        height: 100px;
+        width: 200px;
+        background-color: transparent;
+        border: 3px solid;
+        position: absolute;
+        border-radius: 50%;
+        margin: 24px 0 0 -67px;
+        /*铃铛线*/
+    }
+    
+    .bellline {
+        width: 3px;
+        height: 50px;
+        border: 0;
+        background-color: #000000;
+        position: absolute;
+        float: left;
+        margin: 45px 0 0 33px;
+        /*铃铛线*/
+    }
+    
+    .belldot {
+        border: 7px solid;
+        border-radius: 50%;
+        position: absolute;
+        float: left;
+        margin: 38px 0 0 28px;
+        /*铃铛点*/
+    }
+    
+    .mybody-wrp {
+        height: 300px;
+        width: 450px;
+        position: relative;
+    }
+    
+    .mybody {
+        /*身体*/
+        height: 300px;
+        width: 280px;
+        border: 3px solid;
+        border-top-left-radius: 40px 100px;
+        border-top-right-radius: 40px 100px;
+        border-bottom-left-radius: 60px 150px;
+        border-bottom-right-radius: 60px 150px;
+        background-color: #029be1;
+        position: absolute;
+        left: 50%;
+        margin-left: -140px;
+    }
+    
+    .foot {
+        /*腿*/
+        height: 50px;
+        width: 160px;
+        border: 3px solid;
+        border-top-left-radius: 300px 200px;
+        border-top-right-radius: 130px 100px;
+        border-bottom-left-radius: 130px 100px;
+        border-bottom-right-radius: 130px 100px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: -4%;
+        left: -10%;
+        margin-left: 4px;
+        overflow: hidden;
+    }
+    
+    .foot2 {
+        /*腿*/
+        height: 50px;
+        width: 160px;
+        border: 3px solid;
+        border-top-left-radius: 130px 100px;
+        border-top-right-radius: 300px 200px;
+        border-bottom-left-radius: 130px 100px;
+        border-bottom-right-radius: 130px 100px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: -4%;
+        right: -10%;
+        margin-right: 4px;
+        /* margin: 260px 0 0 133px;*/
+    }
+    
+    .footline {
+        /*腿分割线*/
+        width: 3px;
+        height: 30px;
+        border: 0;
+        background-color: #000000;
+        position: absolute;
+        float: left;
+        left: 50%;
+        margin-left: -1px;
+        bottom: 10%;
+    }
+    
+    .gap {
+        /*腿分割线*/
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border: 3px solid;
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        margin-left: -25px;
+        bottom: 20%;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    .hand {
+        /*手臂*/
+        height: 85px;
+        width: 250px;
+        border: 3px solid;
+        border-radius: 50%;
+        background-color: #029be1;
+        position: absolute;
+        left: -20%;
+        top: 5%;
+        transform: rotate(58deg);
+        transform-origin: 200px 30px;
+        animation: animation 3s ease-in-out;
+        animation-iteration-count: infinite;
+        /*动画名字animation 运行3秒 运行方式进出 循环为无限循环*/
+        -webkit-animation: animation 3s ease-in-out infinite;
+        /*chrome*/
+        -webkit-transform-origin: 200px 30px;
+        -moz-animation: animation 3s ease-in-out infinite;
+        /*Firefox*/
+        -moz-transform-origin:200px 30px;
+        -o-animation: animation 3s ease-in-out infinite;
+        /*Opera*/
+        -o-transform-origin:200px 30px;
+        -ms-animation: animation 3s ease-in-out infinite;
+        /*IE*/
+        -ms-transform-origin: 200px 30px;
+    }
+    
+    .handdot {
+        /*手掌*/
+        background-color: #FFFFFF;
+        height: 100px;
+        width: 100px;
+        border: 3px solid;
+        border-radius: 50%;
+        position: absolute;
+        left: -10%;
+        top: -7px;
+    }
+    
+    .handall {
+        height: 275px;
+        width: 220px;
+        position: absolute;
+        background-color: transparent;
+        transform-origin: 100px 450px 0;
+        animation: animation 3s ease-in-out;
+        animation-iteration-count: infinite;
+        /*动画名字animation 运行3秒 运行方式进出 循环为无限循环*/
+        -webkit-animation: animation 3s ease-in-out infinite;
+        /*chrome*/
+        -webkit-transform-origin: 100px 450px 0;
+        -moz-animation: animation 3s ease-in-out infinite;
+        /*Firefox*/
+        -moz-transform-origin: 100px 450px 0;
+        -o-animation: animation 3s ease-in-out infinite;
+        /*Opera*/
+        -o-transform-origin: 100px 450px 0;
+        -ms-animation: animation 3s ease-in-out infinite;
+        /*IE*/
+        -ms-transform-origin: 100px 450px 0;
+    }
+    
+    @-webkit-keyframes animation {
+        /*chrome*/
+        50% {
+            -webkit-transform: rotate(-20deg);
+        }
+    }
+    
+    @-moz-keyframes animation {
+        /*Firefox*/
+        50% {
+            -moz-transform: rotate(-20deg);
+        }
+    }
+    
+    @-o-keyframes animation {
+        /*Opera*/
+        50% {
+            -o-transform: rotate(-20deg);
+        }
+    }
+    
+    @-ms-keyframes animation {
+        /*IE*/
+        50% {
+            -ms-transform: rotate(-20deg);
+        }
+    }
+    
+    .hand2 {
+        height: 85px;
+        width: 250px;
+        border: 3px solid;
+        border-radius: 50%;
+        background-color: #029be1;
+        position: absolute;
+        right: -16%;
+        top: 15%;
+        transform: rotate(45deg);
+    }
+    
+    .handdot2 {
+        background-color: #FFFFFF;
+        height: 100px;
+        width: 100px;
+        border: 3px solid;
+        border-radius: 50%;
+        position: absolute;
+        right: -7%;
+        bottom: -10%;
+    }
+    
+    .pocket {
+        /*口袋*/
+        height: 80px;
+        width: 160px;
+        background-color: #FFFFFF;
+        border: 3px solid;
+        border-radius: 0 0 80px 80px;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        margin-left: -82px;
+        /*半圆设置像宽高为a，2a 圆角度数为a的像素值*/
+    }
+    
+    .belly {
+        /*肚子*/
+        height: 200px;
+        width: 200px;
+        background-color: #FFFFFF;
+        border: 3px solid;
+        border-radius: 50%;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        margin-left: -102px;
+    }

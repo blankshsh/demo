@@ -1,0 +1,70 @@
+body{
+	background: #C0C0C0;
+}
+.wrp {
+    width: 350px;
+    height: auto;
+    margin: 100px auto;
+    padding: 0;
+    text-align: center;
+    background: #555;
+    border-radius: 20px;
+
+}
+.screen{
+	width: 280px;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px;
+    border-radius: 5px;
+    border: #e6e6e6 1px solid;
+    border-bottom: #f2f2f2 1px solid;
+    border-right: #f2f2f2 1px solid;
+    margin: 20px auto;
+    direction: ltr;
+    text-align: right;
+    font-size: 24px;
+    color: #999;
+}
+.btn .imp-symbol{
+	background: #ED8E55;
+}
+.btn .symbol{
+	background: #000;
+	color: #F0F0F0;
+}
+
+.btn {
+	
+	padding: 0;
+    margin:10px 24px;
+    height: auto;
+    border: #F0F0F0 1px solid;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+
+.btn input {
+    list-style: none;
+    float: left;
+    width: 50px;
+    height:40px;
+    margin: 5px;
+    display: inline;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: #eaeaea;
+    border-radius: 5px;	
+}
+#formulas{
+	width: 90px;
+}
+
+.foot{
+	
+	height: 20px;
+	width: 350px;
+}

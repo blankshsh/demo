@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3D魔方</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    /*
+    设置干扰参数*/
+    
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six {
+        position: absolute;
+        height: 156px;
+        width: 156px;
+        /*border: 2px solid #000;*/
+        text-align: center;
+    }
+    /* 设置6个面的大小，浮动参数*/
+    
+    .box {
+        -webkit-animation: animation 3s ease-in-out infinite;
+        /*名字 运行时间 运行方式 循环为无限循环*/
+        -webkit-transform-style: preserve-3d;
+        /*3D渲染*/
+        -webkit-transform-origin: 90px 90px 0;
+        /*点位旋转位置*/
+        -moz-animation: animation 3s ease-in-out infinite;
+        -moz-transform-style: preserve-3d;
+        -moz-transform-origin: 90px 90px 0;
+        -o-animation: animation 3s ease-in-out infinite;
+        -o-transform-style: preserve-3d;
+        -o-transform-origin: 90px 90px 0;
+        -ms-animation: animation 3s ease-in-out infinite;
+        -ms-transform-style: preserve-3d;
+        -ms-transform-origin: 90px 90px 0;
+    }
+    /*六个面具体参数*/
+    
+    .one {
+        -webkit-transform: translateZ(78px);
+        -moz-transform: translateZ(78px);
+        -ms-transform: translateZ(78px);
+        -o-transform: translateZ(78px);
+    }
+    
+    .two {
+        -webkit-transform: rotateX(-90deg)translateZ(78px);
+        -moz-transform: rotateX(-90deg)translateZ(78px);
+        -o-transform: rotateX(-90deg)translateZ(78px);
+        -ms-transform: rotateX(-90deg)translateZ(78px);
+    }
+    
+    .three {
+        -webkit-transform: rotateY(90deg)rotateX(90deg)translateZ(78px);
+        -moz-transform: rotateY(90deg)rotateX(90deg)translateZ(78px);
+        -ms-transform: rotateY(90deg)rotateX(90deg)translateZ(78px);
+        -o-transform: rotateY(90deg)rotateX(90deg)translateZ(78px);
+    }
+    
+    .four {
+        -webkit-transform: rotateY(180deg)rotateZ(90deg)translateZ(78px);
+        -moz-transform: rotateY(180deg)rotateZ(90deg)translateZ(78px);
+        -ms-transform: rotateY(180deg)rotateZ(90deg)translateZ(78px);
+        -o-transform: rotateY(180deg)rotateZ(90deg)translateZ(78px);
+    }
+    
+    .five {
+        -webkit-transform: rotateY(-90deg)rotateZ(90deg)translateZ(78px);
+        -moz-transform: rotateY(-90deg)rotateZ(90deg)translateZ(78px);
+        -ms-transform: rotateY(-90deg)rotateZ(90deg)translateZ(78px);
+        -o-transform: rotateY(-90deg)rotateZ(90deg)translateZ(78px);
+    }
+    
+    .six {
+        -webkit-transform: rotateY(90deg)translateZ(78px);
+        -moz-transform: rotateY(90deg)translateZ(78px);
+        -ms-transform: rotateY(90deg)translateZ(78px);
+        -o-transform: rotateY(90deg)translateZ(78px);
+    }
+    
+    /*设置运动轨迹*/
+    
+    @-webkit-keyframes animation {
+        from,
+        to {}
+        16% {
+            -webkit-transform: rotateY(-90deg);
+        }
+        33% {
+            -webkit-transform: rotateY(-90deg)rotateZ(135deg);
+        }
+        50% {
+            -webkit-transform: rotateY(225deg)rotateZ(135deg);
+        }
+        66% {
+            -webkit-transform: rotateY(135deg)rotateZ(135deg);
+        }
+        83% {
+            -webkit-transform: rotateY(135deg);
+        }
+    }
+    
+    @-moz-keyframes animation {
+        from,
+        to {}
+        16% {
+            -moz-transform: rotateY(-90deg);
+        }
+        33% {
+            -moz-transform: rotateY(-90deg)rotateZ(135deg);
+        }
+        50% {
+            -moz-transform: rotateY(225deg)rotateZ(135deg);
+        }
+        66% {
+            -moz-transform: rotateY(135deg)rotateZ(135deg);
+        }
+        83% {
+            -moz-transform: rotateY(135deg);
+        }
+    }
+    
+    @-o-keyframes animation {
+        from,
+        to {}
+        16% {
+            -o-transform: rotateY(-90deg);
+        }
+        33% {
+            -o-transform: rotateY(-90deg)rotateZ(135deg);
+        }
+        50% {
+            -o-transform: rotateY(225deg)rotateZ(135deg);
+        }
+        66% {
+            -o-transform: rotateY(135deg)rotateZ(135deg);
+        }
+        83% {
+            -o-transform: rotateY(135deg);
+        }
+    }
+    
+    @-ms-keyframes animation {
+        from,
+        to {}
+        16% {
+            -ms-transform: rotateY(-90deg);
+        }
+        33% {
+            -ms-transform: rotateY(-90deg)rotateZ(135deg);
+        }
+        50% {
+            -ms-transform: rotateY(225deg)rotateZ(135deg);
+        }
+        66% {
+            -ms-transform: rotateY(135deg)rotateZ(135deg);
+        }
+        83% {
+            -ms-transform: rotateY(135deg);
+        }
+    }
+    /*设置各个面div的颜色*/
+    
+    .inner {
+        height: 156px;
+        width: 156px;
+    }
+    
+    .inner11,
+    .inner12,
+    .inner13,
+    .inner14,
+    .inner15,
+    .inner16,
+    .inner17,
+    .inner18,
+    .inner19 {
+        height: 50px;
+        width: 50px;
+        /*border:1px solid #000;*/
+        background-color: #FF0000;
+        float: left;
+        margin: 1px;
+    }
+    
+    .inner21,
+    .inner22,
+    .inner23,
+    .inner24,
+    .inner25,
+    .inner26,
+    .inner27,
+    .inner28,
+    .inner29 {
+        height: 50px;
+        width: 50px;
+        /*border:1px solid #000;*/
+        background-color: #FFFFFF;
+        float: left;
+        margin: 1px;
+    }
+    
+    .inner31,
+    .inner32,
+    .inner33,
+    .inner34,
+    .inner35,
+    .inner36,
+    .inner37,
+    .inner38,
+    .inner39 {
+        height: 50px;
+        width: 50px;
+        /*border:1px solid #000;*/
+        background-color: #00FF00;
+        float: left;
+        margin: 1px;
+    }
+    
+    .inner41,
+    .inner42,
+    .inner43,
+    .inner44,
+    .inner45,
+    .inner46,
+    .inner47,
+    .inner48,
+    .inner49 {
+        height: 50px;
+        width: 50px;
+        /*border:1px solid #000;*/
+        background-color: #FFFF00;
+        float: left;
+        margin: 1px;
+    }
+    
+    .inner51,
+    .inner52,
+    .inner53,
+    .inner54,
+    .inner55,
+    .inner56,
+    .inner57,
+    .inner58,
+    .inner59 {
+        height: 50px;
+        width: 50px;
+        /*border:1px solid #000;*/
+        background-color: #FF6100;
+        float: left;
+        margin: 1px;
+    }
+    
+    .inner61,
+    .inner62,
+    .inner63,
+    .inner64,
+    .inner65,
+    .inner66,
+    .inner67,
+    .inner68,
+    .inner69 {
+        height: 50px;
+        width: 50px;
+        /*border:1px solid #000;*/
+        background-color: #0000FF;
+        float: left;
+        margin: 1px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="view" style="width: 190px;height: 190px;margin: 100px auto 0 auto;">
+        <div class="box">
+            <div class="one">
+                <div class="inner">
+                    <div class="inner11"></div>
+                    <div class="inner12"></div>
+                    <div class="inner13"></div>
+                    <div class="inner14"></div>
+                    <div class="inner15"></div>
+                    <div class="inner16"></div>
+                    <div class="inner17"></div>
+                    <div class="inner18"></div>
+                    <div class="inner19"></div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="inner21"></div>
+                <div class="inner22"></div>
+                <div class="inner23"></div>
+                <div class="inner24"></div>
+                <div class="inner25"></div>
+                <div class="inner26"></div>
+                <div class="inner27"></div>
+                <div class="inner28"></div>
+                <div class="inner29"></div>
+            </div>
+            <div class="three">
+                <div class="inner31"></div>
+                <div class="inner32"></div>
+                <div class="inner33"></div>
+                <div class="inner34"></div>
+                <div class="inner35"></div>
+                <div class="inner36"></div>
+                <div class="inner37"></div>
+                <div class="inner38"></div>
+                <div class="inner39"></div>
+            </div>
+            <div class="four">
+                <div class="inner41"></div>
+                <div class="inner42"></div>
+                <div class="inner43"></div>
+                <div class="inner44"></div>
+                <div class="inner45"></div>
+                <div class="inner46"></div>
+                <div class="inner47"></div>
+                <div class="inner48"></div>
+                <div class="inner49"></div>
+            </div>
+            <div class="five">
+                <div class="inner51"></div>
+                <div class="inner52"></div>
+                <div class="inner53"></div>
+                <div class="inner54"></div>
+                <div class="inner55"></div>
+                <div class="inner56"></div>
+                <div class="inner57"></div>
+                <div class="inner58"></div>
+                <div class="inner59"></div>
+            </div>
+            <div class="six">
+                <div class="inner61"></div>
+                <div class="inner62"></div>
+                <div class="inner63"></div>
+                <div class="inner64"></div>
+                <div class="inner65"></div>
+                <div class="inner66"></div>
+                <div class="inner67"></div>
+                <div class="inner68"></div>
+                <div class="inner69"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
